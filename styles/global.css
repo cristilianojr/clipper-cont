@@ -1,0 +1,31 @@
+* {
+    /* POSITIONS */
+    margin: 0;
+    padding: 0;
+    /* TEXT */
+    text-decoration: none;
+    /* FONT */
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.Line {
+    /* DIMENSIONS */
+    width: 90%;
+    height: 2px;
+    /* COLORIZE */
+    background-color: #00669C;
+}
+
+body {
+    /* DIMENSIONS */
+    width: 100%;
+    max-width: 100%;
+    /* SCROLL */
+    overflow-x: hidden;
+    /* COLORIZE */
+    color: #00669C;
+    background-color: white;
+}
+

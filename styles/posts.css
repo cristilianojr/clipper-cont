@@ -1,0 +1,394 @@
+/* InfoPost */
+.Info-Post {
+    /* DISPLAY OPTIONS */
+    display: flex;
+
+    /* DIMENSIONS */
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+}
+
+/* START POST */
+
+#start {
+    /* DISPLAY OPTIONS */
+    flex-direction: row;
+    /* ALIGN */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#clipperContLogo {
+    /* DIMENSIONS */
+    width: 400px;
+    height: 125px;
+    /* POSITIONS */
+    margin: 0 auto;
+}
+
+.start-text {
+    /* FONT */
+    font-size: 27pt;
+    /* POSITIONS */
+    margin: 0 auto;
+    
+}
+
+/* ABOUTUS POST */
+
+#aboutus {
+    /* DISPLAY OPTIONS */
+    flex-direction: column;
+    /* DIMENSIONS */
+    width: 100%;
+    height: 550px;
+    /* ALIGN */
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../media/images/post-aboutus-2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutus-text {
+    /* DISPLAY OPTIONS */
+    display: flex;
+    flex-direction: column;
+    /* ALIGN */
+    align-items: center;
+    justify-content: center;
+    /* DIMENSIONS */
+    width: 50%;
+    /* CHILDREN */
+    row-gap: 50px;
+    /* ANIMATIONS */
+    transition: 15ms;
+}
+
+.aboutus-text > h1 {
+    /* FONT */
+    font-size: 27pt;
+}
+
+.aboutus-text > p {
+    /* DIMENSIONS */
+    width: 100%;
+    
+    /* FONT */
+    font-size: 16pt;
+    /* TEXT */
+    text-align: justify;
+}
+
+/* services */
+#services {
+    height: max-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#services > h1 {
+    font-size: 27pt;
+}
+
+.services-line {
+    max-width: 80%;
+    height: max-content;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: center;
+
+}
+
+.services-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1a86c0;
+    padding: 10px;
+    row-gap: 9px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #00669C;
+    border-style: solid;
+}
+
+.services-card > img {
+    width: 60px;
+    filter: invert();
+}
+
+.services-card > h3 {
+    font-size: 20px;
+}
+
+.services-card > span {
+    text-align:start;
+    width: 90%;
+    height: 100px;
+    font-size: 14px;
+
+}
+/* team */
+#team {
+    /* DISPLAY OPTIONS */
+    flex-direction: column;
+    align-items: center;
+}
+
+#team > h1 {
+    /* FONT */
+    font-size: 27pt;
+}
+
+.team-imagebook {
+    /* DIMENSIONS */
+    width: 100%;
+    height: 100%;
+    /* POSITIONS */
+    position: relative;
+}
+
+#team-background {
+    /* POSITIONS */
+    position: absolute;
+
+    /* DIMENSIONS */
+    width: 100%;
+    height: 100%;
+
+    /* LAYERS */
+    z-index: 2;
+
+    opacity: 60%;
+}
+
+.Team-group {
+    /* DIMENSIONS */
+    width: 100%;
+    height: 100%;
+    /* POSITIONS */
+    position: relative;
+    /* LAYERS */
+    z-index: 6;
+}
+
+.Team-person {
+    /* DISPLAY OPTIONS */
+    display: flex;
+    flex-direction: column;
+    /* ALIGN */
+    align-items: center;
+    justify-content: center;
+    /* DIMENSION */
+    width: 200px;
+    height: 250px;    
+}
+
+.Team-person > img {
+    /* DIMENSIONS */
+    width: 150px;
+}
+
+.Team-person > h2 {
+    /* DIMENSIONS */
+    width: max-content;
+    /* FONT */
+    font-size: 12pt;
+}
+
+.Team-person > p {
+    /* FONT */
+    font-size: 12pt;
+}
+
+#wilmara-card {
+    /* POSITIONS */
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    margin-left: -100px;
+    margin-top: -125px;
+}
+
+#rafael-card {
+    /* POSITIONS */
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -100px;
+    margin-top: -125px;
+}
+
+#wellyson-card {
+    /* POSITIONS */
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    margin-left: -100px;
+    margin-top: -125px;
+}
+
+
+
+/* contactus */
+#contactus {
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    height: max-content;
+    row-gap: 15px;
+    padding: 15px;
+}
+
+.Form-Item {
+    width: 100%;
+    height: 45px;
+    color: #00669C;
+    font-size: 20px;
+}
+
+.Form-Item:focus-visible {
+    outline: none;
+    outline: 3px solid #00659cb2; 
+}
+
+.Form-Button {
+    width: 80%;
+    height: 45px;
+    background-color: #00669C;
+    border-color: #00669C;
+    color: white;
+    border-radius: 5px;
+}
+
+#form-content {
+    height: 100px;
+}
+
+
+/* MOBILE MODE */
+
+@media screen and (max-width: 830px) {
+
+    #aboutus-image {
+        max-width: 100%;
+        min-width: 700px;
+    }
+
+    .Info-Post {
+        /* DISPLAY OPTIONS */
+        display: flex;
+    
+        /* DIMENSIONS */
+        width: 100%;
+        height: 400px;
+    }
+
+
+    /* START POST */
+
+    #start {
+        flex-direction: column;
+        row-gap: 20px;
+        transition: transform 1s ease-in;
+    }
+
+    #clipperContLogo {
+        /* DIMENSIONS */
+        width: 250px;
+        height: 75px;
+        /* POSITIONS */
+        margin: 0 auto;
+    }
+
+    .start-text {
+        /* FONT */
+        font-size: 18pt;
+        /* POSITIONS */
+        margin: 0 auto;
+    }
+    
+    .Team-person > img {
+        width: 100px;
+    }
+
+    .Team-person > h2 {
+        font-size: 12px;
+    }
+
+    .Team-person > p {
+        font-size: 10px;
+    }
+
+
+    .aboutus-text {
+        width: 60%;
+        row-gap: 15px;
+        text-align: center;
+    }
+
+    .aboutus-text > h1 {
+        
+        width: 100%;
+        font-size: 25pt;
+    }
+
+    .aboutus-text > p {
+        font-size: 16px;
+    }
+
+    .services-line {
+        max-width: 100%;
+        row-gap: 5px;
+    }
+
+    .services-card {
+        width: 100%;
+    }
+
+    .services-card > img {
+        width: 60px;
+        filter: invert();
+    }
+
+    .services-card > h3 {
+        font-size: 20px;
+    }
+
+    .services-card > span {
+        width: 95%;
+        height: 100px;
+        font-size: 15px;
+
+    }
+
+}
