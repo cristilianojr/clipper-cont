@@ -48,9 +48,10 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.aboutus {
     background-image: url("../media/images/post-aboutus-2.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .aboutus-text {
