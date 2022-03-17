@@ -128,8 +128,6 @@
         </section>
 
         <section class="Info-Post" id="contactus">
-
-            <form action="/" method="post" autocomplete="off">
             <?php
                 require_once 'vendor/autoload.php';
                 if (isset($_POST["get-started-name"]) && !empty($_POST['get-started-email'])) {
@@ -152,6 +150,7 @@
                     $result = $mailer->send($message);
                 }
             ?>
+            <form method="POST" action="/"  autocomplete="off">
                 <h1>Solicite um Orçamento</h1>
                 <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="get-started-name" required>
                 <span></span>
@@ -159,7 +158,7 @@
                 <span></span>
                 <textarea class="Form-Item" id="form-content" type="text" placeholder="Mensagem" name="get-started-message" required rows="20" cols="40"></textarea>
                 <span></span>
-                <button class="Form-Button" id="send-mail" type="submit" value="Submit">Enviar</button>
+                <button class="Form-Button" id="send-mail" type="submit">Enviar</button>
             </form>
         </section>
 
