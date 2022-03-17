@@ -137,7 +137,6 @@
                 <textarea class="Form-Item" id="form-content" placeholder="Mensagem" name="message" required rows="20" cols="40"></textarea>
                 <span></span>
                 <button class="Form-Button" id="send-mail" type="submit" value="Enviar">Enviar</button>
-                <input type="hidden" name="redirectTo" value="https://clippercont.com/#contactus">  
             </form>
         </section>
 
