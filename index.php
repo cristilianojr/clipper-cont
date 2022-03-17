@@ -150,11 +150,13 @@
                     $result = $mailer->send($message);
                 }
             ?>
-            <form method="POST" action="/"  autocomplete="off">
+
+            
+            <form method="POST" action="./scripts/email.php"  autocomplete="off">
                 <h1>Solicite um Orçamento</h1>
                 <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="get-started-name" required>
                 <span></span>
-                <input class="Form-Item" id="form-email" type="email" placeholder="E-mail" name="get-started-name" required>
+                <input class="Form-Item" id="form-email" type="email" placeholder="E-mail" name="get-started-email" required>
                 <span></span>
                 <textarea class="Form-Item" id="form-content" type="text" placeholder="Mensagem" name="get-started-message" required rows="20" cols="40"></textarea>
                 <span></span>
