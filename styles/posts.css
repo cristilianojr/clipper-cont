@@ -52,6 +52,8 @@
 
 .aboutus {
     background-image: url("../media/images/post-aboutus-2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .aboutus-text {
