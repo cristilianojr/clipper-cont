@@ -10,16 +10,16 @@
     <link rel="shortcut icon" href="./media/images/clipper-resumed-logo.ico" type="image/x-icon"> 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/posts.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/global.css?v=<?php echo microtime() ?>">
+    <link rel="stylesheet" href="./styles/header.css?v=<?php echo microtime() ?>">
+    <link rel="stylesheet" href="./styles/posts.css?v=<?php echo microtime() ?>">
+    <link rel="stylesheet" href="./styles/footer.css?v=<?php echo microtime() ?>">
 
 </head>
 <body class="master">
     <header>
         <section class="HeaderContainer">
-            <img id="LogoResumed" src="./media/images/clipper-resumed-logo.webp" alt="Clipper Contabilidade Logo Resumida">
+            <img id="LogoResumed" src="./media/images/clipper-resumed-logo.webp?v=<?php echo microtime() ?>" alt="Clipper Contabilidade Logo Resumida">
             <div class="Mobile-Menu">
                 <div class="Mobile-Menu-Line-1"></div>
                 <div class="Mobile-Menu-Line-2"></div>
@@ -32,7 +32,7 @@
                 <a class="Header-Option" href="#team">TIME</a>
                 <a class="Header-Option" href="#contactus">CONTATE-NOS</a>
                 <a class="Header-Option network" id="whatsapp_menu" href="https://api.whatsapp.com/send?1=pt_BR&phone=5583999367236">
-                    <img src="./media/images/whatsapp-icon.webp" alt="whats" >
+                    <img src="./media/images/whatsapp-icon.webp?v=<?php echo microtime() ?>" alt="whats" >
                     <h3>(83) 99936-7236</h3>
                 </a>
             </div>
@@ -42,7 +42,7 @@
     <main>
 
         <section class="Info-Post" id="start">
-            <img id="clipperContLogo" src="./media/images/clipper-full-logo.webp" alt="Clipper Contabilidade Logo">
+            <img id="clipperContLogo" src="./media/images/clipper-full-logo.webp?v=<?php echo microtime() ?>" alt="Clipper Contabilidade Logo">
             <div class="start-text">
                 <h2>Soluções</h2>
                 <h2>Contábeis e</h2>
@@ -61,37 +61,37 @@
             <h1>Serviços</h1>
             <div class="services-line">
                 <div class="services-card">
-                    <img src="./media/images/cont_icon.webp" alt="financeiro">
+                    <img src="./media/images/cont_icon.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>Contabilidade Empresarial</h3>
                     <span>▸ Análises;<br>▸ Lançamentos;<br>▸ Procedimentos contábeis empresariais;<br>▸ Aberturas, baixas, ajuste fiscal.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/imp-rend-icon.webp" alt="financeiro">
+                    <img src="./media/images/imp-rend-icon.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3> Imposto de Renda</h3>
                     <span>▸ Declaração de ajuste anual do imposto de renda de pessoas físicas.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/gest-pp-icon.webp" alt="financeiro">
+                    <img src="./media/images/gest-pp-icon.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>Gestão de Funcionário</h3>
                     <span>▸ Contratação;<br>▸ Gerenciamento;<br>▸ A Terceirização do departamento pessoal.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/e-social-icon.webp" alt="financeiro">
+                    <img src="./media/images/e-social-icon.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>E-social</h3>
                     <span>▸ Lançamentos;<br>▸ Contratação;<br>▸ Gerenciamento do e-social doméstico.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/finan-merc-icon.webp" alt="financeiro">
+                    <img src="./media/images/finan-merc-icon.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>Mercado Financeiro</h3>
                     <span>▸ Análise de carteiras;<br>▸ Gerenciamento de ativos;<br>▸ Procedimentos de apuração fiscal na bolsa.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/MEI.webp" alt="financeiro">
+                    <img src="./media/images/MEI.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>Gestão do MEI</h3>
                     <span>▸ Controle de compras e vendas;<br>▸ Gerenciamento do funcionário;<br>▸ Gestão financeira;<br>▸ Consultorias financeiras.</span>
                 </div>
                 <div class="services-card">
-                    <img src="./media/images/tax.webp" alt="financeiro">
+                    <img src="./media/images/tax.webp?v=<?php echo microtime() ?>" alt="financeiro">
                     <h3>Planejamento Tributário</h3>
                     <span>▸ Definição da melhor opção para o enquadramento tributário e fiscal.</span>
                 </div>
@@ -102,22 +102,22 @@
         <section class="Info-Post" id="team">
             <h1>Nosso Time</h1>
             <div class="team-imagebook">
-                <img id="team-background" src="./media/images/clipper-team-2.webp" alt="Equipe da Clipper">
+                <img id="team-background" src="./media/images/clipper-team-2.webp?v=<?php echo microtime() ?>" alt="Equipe da Clipper">
                 <div class="Team-group">
                     <div class="Team-person" id="rafael-card">
-                        <img src="./media/images/rafael.webp" alt="rafael-card">
+                        <img src="./media/images/rafael.webp?v=<?php echo microtime() ?>" alt="rafael-card">
                         <h2>Rafael Rodrigues</h2>
                         <p>Coordenador</p>
                         <p>Dep. Comercial</p>
                     </div>
                     <div class="Team-person" id="wellyson-card">
-                        <img src="./media/images/wellyson.webp" alt="wellyson-card">
+                        <img src="./media/images/wellyson.webp?v=<?php echo microtime() ?>" alt="wellyson-card">
                         <h2>Wellyson Costa</h2>
                         <p>Coordenador</p>
                         <p>Dep. Pessoal</p>
                     </div>
                     <div class="Team-person" id="wilmara-card">
-                        <img src="./media/images/wilmara.webp" alt="Wilmara">
+                        <img src="./media/images/wilmara.webp?v=<?php echo microtime() ?>" alt="Wilmara">
                         <h2>Wilmara de Medeiros</h2>
                         <p>Coordenadora</p>
                         <p>Dep. Fiscal</p>
@@ -166,11 +166,11 @@
             <h3>Redes Sociais</h3>
             <div class="social-networks"> 
                 <a class="network" id="whatsapp" href="https://api.whatsapp.com/send?1=pt_BR&phone=5583999367236">
-                    <img src="./media/images/whatsapp-icon.webp" alt="whats" >
+                    <img src="./media/images/whatsapp-icon.webp?v=<?php echo microtime() ?>" alt="whats" >
                     <h3>(83) 99936-7236</h3>
                 </a>
                 <a class="network" id="instagram"  target="_blank" href="https://www.instagram.com/clippercont/">
-                    <img src="./media/images/instagram.webp" alt="instagram">
+                    <img src="./media/images/instagram.webp?v=<?php echo microtime() ?>" alt="instagram">
                     <h3>@Clippercont</h3>
                 </a>
             </div>
@@ -180,6 +180,6 @@
     <div class="container-copyright">
         <h3>Todos os direito reservados desde 2022 ©</h3>
     </div>
-    <script src="./scripts/mobile-menu.js"></script>
+    <script src="./scripts/mobile-menu.js?v=<?php echo microtime() ?>"></script>
 </body>
 </html>
