@@ -152,7 +152,7 @@
             ?>
 
             
-            <form method="POST" action="./scripts/email.php"  autocomplete="off">
+            <form method="POST" action="/"  autocomplete="off">
                 <h1>Solicite um Orçamento</h1>
                 <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="get-started-name" required>
                 <span></span>
