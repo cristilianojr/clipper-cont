@@ -129,15 +129,35 @@
 
         <section class="Info-Post" id="contactus">
 
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <input type="hidden" name="accessKey" value="c8c9d950-d843-4c58-9dd0-39248358b1df">
-                <input type="hidden" name="redirectTo" value="https://clippercont.com/#contactus">
+            <form action="/" method="post" autocomplete="off">
+            <?php
+                require_once 'vendor/autoload.php';
+                if (isset($_POST["get-started-name"]) && !empty($_POST['get-started-email'])) {
+                    $name = $_POST['get-started-name'];
+                    $email = $_POST['get-started-email'];
+                    $message = $_POST['get-started-message'];
+
+                    $transport = (new Swift_SmtpTransport('smtp.hostinger.com', 465, 'tls'))
+                        ->setUsername('contato@clippercont.com')
+                        ->setPassword('Manoal@123');
+                    $transport->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer' => false)));
+
+                    $mailer = new Swift_Mailer($transport);
+
+                    $message = (new Swift_Message(time() . ' - Orçamento'))
+                        ->setFrom($email)
+                        ->setTo('contato@clippercont.com')
+                        ->setBody($message, 'text/html');
+
+                    $result = $mailer->send($message);
+                }
+            ?>
                 <h1>Solicite um Orçamento</h1>
-                <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="name" required>
+                <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="get-started-name" required>
                 <span></span>
-                <input class="Form-Item" id="form-email" type="email" placeholder="E-mail" name="email" required>
+                <input class="Form-Item" id="form-email" type="email" placeholder="E-mail" name="get-started-name" required>
                 <span></span>
-                <textarea class="Form-Item" id="form-content" type="text" placeholder="Mensagem" name="message" required rows="20" cols="40"></textarea>
+                <textarea class="Form-Item" id="form-content" type="text" placeholder="Mensagem" name="get-started-message" required rows="20" cols="40"></textarea>
                 <span></span>
                 <button class="Form-Button" id="send-mail" type="submit" value="Submit">Enviar</button>
             </form>
