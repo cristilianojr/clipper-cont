@@ -133,7 +133,7 @@
                 if (isset($_POST["get-started-name"]) && !empty($_POST['get-started-email'])) {
                     $name = $_POST['get-started-name'];
                     $email = $_POST['get-started-email'];
-                    $message = $_POST['get-started-message'];
+                    $message = $message = "Olá, gostaria de solicitar um orçamento!<br/>Meu e-mail: " . $email;
 
                     $transport = (new Swift_SmtpTransport('smtp.hostinger.com', 465, 'tls'))
                         ->setUsername('contato@clippercont.com')
