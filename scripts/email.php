@@ -2,14 +2,14 @@
 
     if (isset($_POST['email']) && !empty($_POST['email'])) {
 
-        $name = addcslashes($_POST['name']);
-        $email = addcslashes($_POST['email']);
-        $message = addcslashes($_POST['message']);
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
         
         $to = "contato@clippercont.com";
         $subjet = "Contato - Clipper Contabilidade";
-        $body = "Nome: ".$name."\r\n".
-                "Email: ".$email."\r\n".
+        $body = "Nome: ".$name."\n".
+                "Email: ".$email."\n".
                 "Mensagem: ".$message;
         $header = "From:".$email."\r\n".
                     "Reply-To".$email."\e\n".

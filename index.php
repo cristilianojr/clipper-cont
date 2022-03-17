@@ -130,14 +130,14 @@
         <section class="Info-Post" id="contactus">
             <form method="POST" action="./scripts/email.php"  autocomplete="off">
                 <h1>Solicite um Orçamento</h1>
-                <input class="Form-Item" id="form-name" type="text" placeholder="Nome" name="name" required>
+                <input class="Form-Item" id="form-name" placeholder="Nome" name="name" required>
                 <span></span>
-                <input class="Form-Item" id="form-email" type="email" placeholder="E-mail" name="email" required>
+                <input class="Form-Item" id="form-email" placeholder="E-mail" name="email" required>
                 <span></span>
-                <textarea class="Form-Item" id="form-content" type="text" placeholder="Mensagem" name="message" required rows="20" cols="40"></textarea>
+                <textarea class="Form-Item" id="form-content" placeholder="Mensagem" name="message" required rows="20" cols="40"></textarea>
                 <span></span>
                 <button class="Form-Button" id="send-mail" type="submit" value="Enviar"></button>
-                <input type="hidden" name="redirectTo" value="https://clippercont.com/#contactus">  
+                <!-- <input type="hidden" name="redirectTo" value="https://clippercont.com/#contactus">   -->
             </form>
         </section>
 
