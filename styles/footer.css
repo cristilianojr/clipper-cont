@@ -56,13 +56,13 @@ footer > h3 {
 }
 
 .container-links > h3 {
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
 .container-links > a {
     font-size: 13px;
-    text-align: left;
+    text-align: center;
     color: white;
     color: rgba(255, 255, 255, 0.7);
 }
